@@ -1,0 +1,28 @@
+{
+  "lockfileVersion": 2,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "geointel",
+    },
+    "apps/api": {
+      "name": "@geointel/api",
+      "version": "0.1.0",
+    },
+    "apps/web": {
+      "name": "@geointel/web",
+      "version": "0.1.0",
+    },
+    "packages/shared": {
+      "name": "@geointel/shared",
+      "version": "0.1.0",
+    },
+  },
+  "packages": {
+    "@geointel/api": ["@geointel/api@workspace:apps/api"],
+
+    "@geointel/shared": ["@geointel/shared@workspace:packages/shared"],
+
+    "@geointel/web": ["@geointel/web@workspace:apps/web"],
+  }
+}
